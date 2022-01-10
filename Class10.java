@@ -34,6 +34,21 @@ public class Class10 {
 		} catch (RadiusTooLarge e) {
 			System.out.println(e + " throwed");
 		}
+		cir.show();try {
+			cir.setRadius(-1);
+		} catch (RadiusIsNegative e) {
+			System.out.println(e + " throwed");
+		} catch (RadiusTooLarge e) {
+			System.out.println(e + " throwed");
+		}
+		cir.show();
+		try {
+			cir.setRadius(80);
+		} catch (RadiusIsNegative e) {
+			System.out.println(e + " throwed");
+		} catch (RadiusTooLarge e) {
+			System.out.println(e + " throwed");
+		}
 		cir.show();
 	}
 }
